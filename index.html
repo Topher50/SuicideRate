@@ -78,23 +78,25 @@ p{
 	<button id = "income">Median Income</button>
 	<button id = "poverty">Poverty rate</button>
 </div>
-<select id="countySelect" class="chosen-select" data-placeholder="Search for County">
-	<option value=""></option>
-</select>
-<select id="sortSelect" class="chosen-select" data-placeholder="Sort counties">
-	<option value=""></option>
-	<option value="AZ">A-Z Alphabetical</option>
-	<option value="ZA">Z-A Alphabetical</option>
-	<option value="SR">High-Low Suicide Rate</option>
-	<option value="RS">Low-High Suicide Rate</option>
-	<option value="POPH">High-Low Population Density</option>
-	<option value="POPL">Low-High Population Density</option>
-	<option value="IN">High-Low Median Income</option>
-	<option value="NI">Low-High Median Income</option>
-	<option value="POV">High-Low Poverty</option>
-	<option value="VOP">Low-High Poverty</option>
-</select>
-<svg id = "svgid"></svg>
+<div style="display: inline-block;">
+	<select id="countySelect" class="chosen-select" data-placeholder="Search for County">
+		<option value=""></option>
+	</select>
+	<select id="sortSelect" class="chosen-select" data-placeholder="Sort counties">
+		<option value=""></option>
+		<option value="AZ">A-Z Alphabetical</option>
+		<option value="ZA">Z-A Alphabetical</option>
+		<option value="SR">High-Low Suicide Rate</option>
+		<option value="RS">Low-High Suicide Rate</option>
+		<option value="POPH">High-Low Population Density</option>
+		<option value="POPL">Low-High Population Density</option>
+		<option value="IN">High-Low Median Income</option>
+		<option value="NI">Low-High Median Income</option>
+		<option value="POV">High-Low Poverty</option>
+		<option value="VOP">Low-High Poverty</option>
+	</select>
+	<svg id = "svgid"></svg>
+</div>
 <br/>
 <svg id = "svgScatter" height= 960></svg>
 <script>
